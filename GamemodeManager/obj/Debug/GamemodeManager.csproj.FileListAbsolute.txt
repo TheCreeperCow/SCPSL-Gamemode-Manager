@@ -14,3 +14,10 @@ I:\SMOD\Github\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.
 I:\SMOD\Github\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.csproj.CoreCompileInputs.cache
 I:\SMOD\Github\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.dll
 I:\SMOD\Github\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.pdb
+C:\Users\Server\Source\Repos\SmodEventTest\SmodEventTest\bin\Debug\GamemodeManager.dll
+C:\Users\Server\Source\Repos\SmodEventTest\SmodEventTest\bin\Debug\GamemodeManager.pdb
+C:\Users\Server\Source\Repos\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.csprojAssemblyReference.cache
+C:\Users\Server\Source\Repos\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.csproj.CoreCompileInputs.cache
+C:\Users\Server\Source\Repos\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.csproj.CopyComplete
+C:\Users\Server\Source\Repos\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.dll
+C:\Users\Server\Source\Repos\SCPSL-Gamemode-Manager\GamemodeManager\obj\Debug\GamemodeManager.pdb

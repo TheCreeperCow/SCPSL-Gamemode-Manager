@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/GamemodeManager/obj/Release
+/Gamemodes/PlagueCurse/PlagueCurse/obj/Release

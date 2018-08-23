@@ -36,6 +36,7 @@ namespace Smod2.Plugins
             // Register Events
             this.AddEventHandlers(new SmodEventHandler(this));
             this.AddCommand("gamemode", new CommandHandler(this));
+            this.AddConfig(new Smod2.Config.ConfigSetting("gamemodesenabled", true, Config.SettingType.BOOL, true, "If Gamemode manager is enabled"));
         }
     }
 }
@@ -117,6 +118,10 @@ namespace Smod2.Handler
         private static int ModeCount = 0;
         public void OnRoundRestart(RoundRestartEvent ev)
         {
+            if (!this.plugin.GetConfigBool("gamemodesenabled"))
+            {
+                return;
+            }
 			if (GamemodeManager.GamemodeManager.NextMode != null)
 			{
 				string servername = plugin.pluginManager.Server.Name;
@@ -230,7 +235,6 @@ namespace Smod2.Handler
 			    return new string[] { "Can't find gamemode: " + args[1] };
                 }
             }
-            else
 		return new string[] { "Can't find any gamemode." };
         }
     }
