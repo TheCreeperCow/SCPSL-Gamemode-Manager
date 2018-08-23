@@ -118,10 +118,6 @@ namespace Smod2.Handler
         private static int ModeCount = 0;
         public void OnRoundRestart(RoundRestartEvent ev)
         {
-            if (!this.plugin.GetConfigBool("gamemodesenabled"))
-            {
-                return;
-            }
 			if (GamemodeManager.GamemodeManager.NextMode != null)
 			{
 				string servername = plugin.pluginManager.Server.Name;
@@ -142,7 +138,11 @@ namespace Smod2.Handler
 			}
 			else if (GamemodeManager.GamemodeManager.ModeList.Count > 0)
 			{
-				string servername = plugin.pluginManager.Server.Name;
+                if (!this.plugin.GetConfigBool("gamemodesenabled"))
+                {
+                    return;
+                }
+                string servername = plugin.pluginManager.Server.Name;
 				servername = servername.Replace(GamemodeManager.GamemodeManager.CurrentMode.Details.name, "$gamemode");
 				servername = servername.Replace("$gamemode", GamemodeManager.GamemodeManager.ModeList[ModeCount].Details.name);
 				/*
